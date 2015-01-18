@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demonstration of the Central Limit Theorem</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Demonstration of the Central Limit Theorem">
+  <meta name="author" content="Quanta0801">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Demonstration of the Central Limit Theorem</h1>
+    <h2></h2>
+    <p>Quanta0801<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Central Limit Theorem (CLT)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>Wikipedia Definition</h1>
+
+<p>In probability theory, the central limit theorem (CLT) states that, given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed, regardless of the underlying distribution.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>In Short</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As long as the sample size is large enough, the mean computed from these random variable will follow a normal distribution.</p>
+
+<p>In general application, a sample size above 30 iterations is usually considered large enough. In fact, in most cases, asa can be seen in the app, even a small sample size of 10 or less would work for some random variables.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>In the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>You can</h1>
+
+<ul>
+<li>Select the type of distribution in which the samples are generated from</li>
+<li>The size of each sample (n)</li>
+<li>The number of samples to generate (m)</li>
+</ul>
+
+<p>Hence, there will be m samples of n random variables in total.</p>
+
+<p>For example:</p>
+
+<pre><code class="r">n &lt;- 30
+m &lt;- 300
+sampleSize &lt;- n * m
+sampleSize
+</code></pre>
+
+<pre><code>## [1] 9000
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>From the Plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>Top Plot</h1>
+
+<p>Shows the distribution of the samples, as defined by the distribution selected. Noticed that they may not be following the normal distribution, and do not have similarity to that distribution</p>
+
+<h1>Bottom Plot</h1>
+
+<p>The distribution of the means from each sample follows the theoretical normal distribution (plotted in blue). The distribution follows more closely to the normal distribution, the larger the sample size.</p>
+
+<p>You can observe how the distribution changes as the sample size increases.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Central Limit Theorem (CLT)'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='In Short'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='In the App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='From the Plots'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
