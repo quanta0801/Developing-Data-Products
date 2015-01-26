@@ -27,6 +27,7 @@ shinyServer(function(input, output) {
     xmax <- reactive({ave() + 4*stddev()})
     range <- reactive({seq(xmin(),xmax(),length.out=101)})
     normvalue <- reactive({dnorm(range(),ave(),stddev())})
+    output$mean <- reactive({ave()})
     
     output$plot1 <- renderPlot({
         hist(sample(), breaks=50, xlab="Sample Value",
